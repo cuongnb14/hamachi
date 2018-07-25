@@ -3,3 +3,6 @@ build:
 
 run:
 	docker run -it --net="host" --privileged="true" cuongnb14/hamachi bash
+
+bash:
+	docker-compose exec agent bash
