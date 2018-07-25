@@ -7,7 +7,7 @@ Docker image for hamachi
 `Make build`
 
 ### Step 2: Run container
-`Make run`
+`docker-compose up -d`
 
 ### Step 3: Create or Join network
 `Make bash`
