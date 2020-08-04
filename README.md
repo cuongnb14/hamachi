@@ -9,6 +9,10 @@ Docker image for hamachi
 ### Step 2: Run container
 `docker-compose up -d`
 
+or
+
+`docker run -d --name hamachi --hostname hamachi --privileged --network host cuongnb14/hamachi:0.1`
+
 ### Step 3: Create or Join network
 `Make bash`
 
