@@ -1,7 +1,3 @@
-# Docker compose file for Sender services
-# Author: cuongnguyen@sigma-solutions.eu
-
-
 version: '3'
 services:
   agent:
