@@ -11,7 +11,7 @@ Docker image for hamachi
 
 or
 
-`docker run -d --name hamachi --hostname hamachi --privileged --network host cuongnb14/hamachi:0.1`
+`docker run -d --name hamachi --hostname hamachi --privileged --network host --restart=always cuongnb14/hamachi:0.1`
 
 ### Step 3: Create or Join network
 `Make bash`
