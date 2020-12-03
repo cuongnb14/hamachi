@@ -4,6 +4,7 @@ services:
     image: cuongnb14/hamachi:0.1
     build: .
     hostname: hamachi
+    container_name: hamachi
     network_mode: "host"
     # restart: always
     privileged: true
@@ -11,8 +12,5 @@ services:
     logging:
       driver: "json-file"
       options:
-        max-size: "100M"
+        max-size: "10M"
         max-file: "3"
-
-    
-
