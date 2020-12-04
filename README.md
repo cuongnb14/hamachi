@@ -3,17 +3,37 @@ Docker image for hamachi
 
 # Setup
 
-### Step 1: Buil image
-`Make build`
-
-### Step 2: Run container
+### Step 1: Run container
 `docker-compose up -d`
 
 or
 
-`docker run -d --name hamachi --hostname hamachi --privileged --network host --restart=always cuongnb14/hamachi:0.1`
+`docker run -d --name hamachi --hostname hamachi --privileged --network host --restart=always cuongnb14/hamachi`
 
-### Step 3: Create or Join network
+### Step 2: Create or Join network
 `Make bash`
 
 Use hamachi tool to create and join
+
+```
+# Login
+hamachi login
+
+# Create network
+hamachi create <id>
+
+# Delete network
+hamachi delete <id>
+
+# Join network
+hamachi join <id>
+
+# Remove client
+hamachi evict <network-it> <client-id>
+
+# Set nick-name
+hamachi set-nick <nick-name>
+
+# List client:
+hamachi list
+```

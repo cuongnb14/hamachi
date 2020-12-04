@@ -1,8 +1,8 @@
 version: '3'
+
 services:
-  agent:
-    image: cuongnb14/hamachi:0.1
-    build: .
+  hamachi:
+    image: cuongnb14/hamachi
     hostname: hamachi
     container_name: hamachi
     network_mode: "host"
